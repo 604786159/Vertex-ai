@@ -68,12 +68,19 @@ try:
     print(f">>> [状态] 企业级缓存建立成功！(将按 GCP $300 赠金账单计费)")
 
     # ==========================================
-    # [反应区三]：交互式审问循环 (Interactive Chat Loop)
+    # [反应区三]：交叉审问、多级 Token 账本与自动化复查流水线
     # ==========================================
     model = GenerativeModel.from_cached_content(cached_content=my_cache)
 
     # 建立持续对话通道（拥有上下文记忆）
     chat = model.start_chat()
+    # ------------------------------------------
+    # 财务模块：初始化全局账本 (Global Ledger)
+    # ------------------------------------------
+    ledger_cached_in = 0  # 累计命中的缓存 Token (享受极低折扣)
+    ledger_new_in = 0  # 累计新增的指令 Token (享受极低折扣)
+    ledger_out = 0  # 累计生成的输出 Token (全价计费)
+
 
     # 第一轮：自动发送基准 Prompt，生成全局表格
     print("\n>>> [系统] 正在执行首轮全量交叉计算（生成汇总表格），请稍候...")
@@ -89,7 +96,7 @@ try:
         【表头结构与填写要求（必须严格遵守以下 13 列绝对顺序，绝不可擅自合并或增删列）】
         1. 文献序号：(文件名中带有的：文献x)
         2. 文献名称：(文献标题全称)
-        3. 文章类型：(填写：Research Article / Review / Conference 等)
+        3. 文章类型：(填写：Article / Review / Conference )
         4. 第一作者：(提取第一作者姓名)
         5. 通讯作者：(提取带有星号或明确标注通讯身份的作者姓名，多位用分号隔开)
         6. 通讯单位：(提取通讯作者所属的核心科研机构名称)
@@ -119,15 +126,16 @@ try:
     print("\n" + "=" * 50)
     print(">>>[主表生成完毕] 已保存至 'Vertex_提取结果_主表.txt'")
 
-    # ------------------------------------------
-    # [核心模块] Token 流量与计费成本实时监控
-    # ------------------------------------------
-    usage = response.usage_metadata
-    print(f"\n[算力能耗报告 (Tokens)]")
-    print(f" ├─ 缓存驻留 Token (已支付停泊费): {usage.cached_content_token_count}")
-    print(f" ├─ 本次输入 Token (打折计费部分): {usage.prompt_token_count - usage.cached_content_token_count}")
-    print(f" ├─ 本次输出 Token (全价计费部分): {usage.candidates_token_count}")
-    print(f" └─ 本轮交互总 Token 吞吐量:       {usage.total_token_count}")
+    # [记账] 记录阶段 A 的算力消耗
+    usage_A = response.usage_metadata
+    ledger_cached_in += usage_A.cached_content_token_count
+    ledger_new_in += (usage_A.prompt_token_count - usage_A.cached_content_token_count)
+    ledger_out += usage_A.candidates_token_count
+
+    print(f"\n[📊 算力账单 | 阶段 A: 全局成表]")
+    print(f" ├─ 命中缓存 (极低折扣): {usage_A.cached_content_token_count} Tokens")
+    print(f" ├─ 新增指令 (极低折扣): {usage_A.prompt_token_count - usage_A.cached_content_token_count} Tokens")
+    print(f" └─ 模型输出 (全价计费): {usage_A.candidates_token_count} Tokens")
     print("=" * 50)
 
     # ------------------------------------------
@@ -135,6 +143,11 @@ try:
     # ------------------------------------------
     print("\n>>> [系统] 启动全量自动化复查流水线 (Data Auditing)...")
     print(">>> 正在为每篇文献单独生成“原文逐字引用”防幻觉报告。")
+
+    # 初始化阶段 B 专属分类账本
+    phase_b_cached_in = 0
+    phase_b_new_in = 0
+    phase_b_out = 0
 
     # 打开一个新文件，用于追加写入每篇文献的复查报告
     with open("Vertex_防幻觉复查报告.txt", "w", encoding="utf-8") as verify_file:
@@ -167,9 +180,24 @@ try:
                 verify_file.write(f"=== 复查对象: {doc_name} ===\n")
                 verify_file.write(verify_resp.text + "\n\n" + "-" * 40 + "\n\n")
 
-                # 再次打印 Token 消耗（让你看到利用缓存后的极低成本）
+                # ==========================================
+                # [关键修复区]：提取当前文献的 Token 并记入总账
+                # ==========================================
                 v_usage = verify_resp.usage_metadata
-                print(f"      [复查完成] 输出 Token: {v_usage.candidates_token_count} (缓存命中保持活跃)")
+
+                # 1. 提取本次调用消耗的明细
+                current_cached = v_usage.cached_content_token_count
+                current_new = v_usage.prompt_token_count - current_cached
+                current_out = v_usage.candidates_token_count
+
+                # 2. 物理累加到阶段 B 的总账本中 (这就是你漏掉的步骤)
+                phase_b_cached_in += current_cached
+                phase_b_new_in += current_new
+                phase_b_out += current_out
+                # ==========================================
+
+                # 打印单次消耗状态
+                print(f"      [复查完成] 消耗 Token -> 输入(含缓存):{v_usage.prompt_token_count} | 输出:{current_out}")
 
                 # 物理延时，防止触发 Vertex AI API 的 RPM 限流墙
                 time.sleep(3)
@@ -180,6 +208,25 @@ try:
 
     print("\n>>> [系统] 全量自动化复查结束！")
     print(">>> [提示] 溯源证据已保存至 'Vertex_防幻觉复查报告.txt'。")
+
+    # 阶段 B 结束后，将其归入全局总账
+    ledger_cached_in += phase_b_cached_in
+    ledger_new_in += phase_b_new_in
+    ledger_out += phase_b_out
+
+    print(f"\n[📊 算力账单 | 阶段 B: 循环切片复查总计]")
+    print(f" ├─ 累计命中缓存 (循环乘数效应折扣): {phase_b_cached_in} Tokens")
+    print(f" ├─ 累计新增指令 (常规微量输入折扣): {phase_b_new_in} Tokens")
+    print(f" └─ 累计模型输出 (防幻觉提取全价费): {phase_b_out} Tokens")
+    print("=" * 50)
+
+    # ------------------------------------------
+    # 财务总决算 (Grand Total)
+    # ------------------------------------------
+    print(f"\n[💰 本次反应釜运行全局总吞吐量 (Grand Total)]")
+    print(f" 核心输入总计 (享缓存底价): {ledger_cached_in + ledger_new_in} Tokens")
+    print(f" 核心输出总计 (标准全价):   {ledger_out} Tokens")
+    print("=" * 50)
 
     # ------------------------------------------
     # 阶段 C：保留手动交互通道
