@@ -17,3 +17,6 @@
 2.长上下文窗口尽量不要大幅度改变instruction
 因为新指令会被依据老指令生成的内容所稀释，所以效能有所降低
 3.更换模型不会有其他后果，只要确保上下文窗口可以
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
