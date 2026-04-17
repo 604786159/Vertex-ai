@@ -1,112 +1,40 @@
 【全量文献交叉验证与原文溯源报告】
 
-=== 复查对象: Huang 等 - 2022 - Enhancing structure and cycling stability of Ni-rich layered oxide cathodes at elevated temperatures.pdf ===
-### **文献：Enhancing structure and cycling stability of Ni-rich layered oxide cathodes at elevated temperatures via dual-function surface modification (Huang et al., J. Energy Chem. 75 (2022) 301-309)**
-
-| **数据/机理分类** | **关键参数** | **参数值** | **原文溯源（强制100%物质基础）** |
-| :--- | :--- | :--- | :--- |
-| **电化学性能** | **循环性能 (55 °C, 0.3C, 2.7-4.6 V)** | SC@LAGP: 100圈后容量保持率为91.3%;SC-NCM: 100圈后容量保持率为16.7% | **数据来源**: Figure 5a 循环性能曲线图。;**视觉读取**: 图标题为"2.7-4.6 V 0.3 C 55 °C"，横轴为循环圈数，纵轴为比容量。图中标注了SC@LAGP（蓝线）在100圈时的容量保持率为“91.3%”，SC-NCM（黑线）在100圈时的容量保持率为“16.7%”。;**文本佐证**: "Fig. 5(a) shows that SC@LAGP exhibits a specific capacity of 176.6 mAh g⁻¹ and a high-capacity retention of 91.3% after 100 cycles at a current density of 0.3 C. In contrast, SC exhibits severe capacity decay ... and a low-capacity retention of 16.7% after 100 cycles." |
-| **电化学性能** | **循环性能 (25 °C, 0.3C, 2.8-4.6 V)** | SC@LAGP: 150圈后容量保持率为90.2%;SC-NCM: 150圈后容量保持率为79.5% | **数据来源**: Figure 4e 循环性能曲线图。;**视觉读取**: 图标题为"4.6 V 0.3 C 25 °C"，横轴为循环圈数，纵轴为比容量。图中标注了SC@LAGP（蓝线）在150圈时的容量保持率为“90.2%”，SC-NCM（黑线）在150圈时的容量保持率为“79.5%”。;**文本佐证**: "...the SC@LAGP exhibits a capacity retention of 90.2%, much higher than the 79.5% of the SC..." |
-| **电化学性能** | **循环性能 (25 °C, 5C, 2.7-4.6 V)** | SC@LAGP: 500圈后容量保持率为81.8%;SC-NCM: 500圈后容量保持率为63.7% | **数据来源**: Figure 4h 循环性能曲线图。;**视觉读取**: 图标题为"2.8-4.6 V 5 C"，横轴为循环圈数，纵轴为比容量。图中标注了SC@LAGP（蓝线）在500圈时的容量保持率为“81.8%”，SC-NCM（黑线）在500圈时的容量保持率为“63.7%”。;**文本佐证**: "The results show that SC@LAGP still achieves a specific capacity of 121.3 mAh g⁻¹ after 500 cycles, which is much higher than SC of 95.5 mAh g⁻¹." (注：文本提及容量值，图中直接标出保持率) |
-| **电化学性能** | **首次库伦效率 (ICE) (25 °C, 0.1C, 2.8-4.4 V)** | SC@LAGP: 88.7%;SC-NCM: 81.6% | **文本佐证**: "Especially, SC@LAGP achieved a high initial Coulombic efficiency of 88.7% compared to the SC of 81.6%..." |
-| **电化学性能** | **首次库伦效率 (ICE) (25 °C, 0.1C, 2.8-4.6 V)** | SC@LAGP: 90.1%;SC-NCM: 87.4% | **文本佐证**: "The SC@LAGP exhibits a high specific capacity of 201.6 mAh g⁻¹ and a high Coulombic efficiency of 90.1% at 4.6 V, compared to 201.9 mAh g⁻¹ and 87.4% for the SC (Fig. 4d)." |
-| **电化学性能** | **倍率性能 (25 °C, 2.75-4.4 V)** | SC@LAGP: 10C时比容量为112.4 mAh/g;SC-NCM: 10C时比容量为99.5 mAh/g | **数据来源**: Figure 4g 倍率性能图。;**视觉读取**: 横轴为循环圈数，对应不同倍率，纵轴为比容量。在10 C倍率下，SC@LAGP（蓝点）的数值约在112.4 mAh/g，SC-NCM（黑点）的数值约在99.5 mAh/g。;**文本佐证**: "SC@LAGP achieves a specific capacity of 112.4 mAh g⁻¹ even at 10 C, when compared to only 99.5 mAh g⁻¹ for SC." |
-| **核心机制** | **结构稳定性-抑制氧空位** | Al掺杂使氧空位形成能从-0.14 eV提升至0.08 eV，这归因于强化的过渡金属层与O之间的离子键，从而抑制了晶格氧的释放。 | **数据来源**: Figure 7d, 7e 示意图及DFT计算结果。;**视觉读取**: 图7d(SC-NCM)标注了氧空位(Vo)形成能为“-0.14 eV”；图7e(SC@LAGP)标注了氧空位形成能为“0.08 eV”。;**文本佐证**: "The doping of Al increases the formation energy of O vacancy from -0.14 to 0.08 eV, which can be ascribed to the enhanced strength of the ionic bond between transition metal slab and O, which reduces the activation of lattice O and thus enhances its stability." |
-| **核心机制** | **动力学-降低Li⁺迁移势垒** | Al掺杂将颗粒内部Li⁺的扩散能垒从0.62 eV降低到0.33 eV。 | **数据来源**: Figure 7b DFT计算结果图。;**视觉读取**: 图标题为"Minimum energy of Li⁺ diffusion path"，横轴为扩散坐标，纵轴为能量。SC-NCM曲线（黑线）的峰值为0.62 eV，SC@LAGP曲线（红线）的峰值为0.33 eV。;**文本佐证**: "The results demonstrate that the introduction of LAGP reduces the diffusion energy barrier of lithium ions inside the particles from 0.62 to 0.33 eV." |
-| **核心机制** | **结构稳定性-抑制Li/Ni混排** | Al掺杂将Li/Ni阳离子混排度从5.98%降低到4.56%。 | **数据来源**: Figure 2i, 2j XRD Rietveld精修图谱的图注。;**视觉读取**: 图2i(SC-NCM)的图注明确标示"Li/Ni disorder=5.98%"；图2j(SC@LAGP)的图注明确标示"Li/Ni disorder=4.56%"。;**文本佐证**: "...leading to a smaller Li/Ni mixing of 4.56% for SC@LAGP than that of SC (5.98%)." |
-| **核心机制** | **界面稳定性-抑制电解液侵蚀** | LAGP涂层有效抑制了高温高压下电解液的副反应，表现为XPS谱图中R-OLi和R-O-(C=O)-O基团信号的显著减弱。 | **文本佐证**: "The significant weakening of the R-OLi and R-O-(C=O)-O groups in SC@LAGP indicates that the LAGP surface modification coating effectively suppressed the side reactions in the electrolyte at elevated temperatures and high voltage, thus stabilizing the interface..." |
-| **核心机制** | **界面稳定性-抑制界面相变** | 循环后，未包覆的SC-NCM表面转变为失活的无序岩盐相和部分尖晶石相；而SC@LAGP表面则维持了约3 nm的保护层和内部一致的R-3m层状结构。 | **数据来源**: Figure 7f, 7g 循环后HRTEM图像及图注。;**视觉读取**: 图7f显示SC-NCM循环后表面出现Rock-salt和Spinel相；图7g显示SC@LAGP循环后表面依然完整，内部保持层状结构。;**文本佐证**: "The figure showed the surface of SC was inactive disordered rock salt phase accompanied by part of spinel phase...In contrast, the SC@LAGP shows a dual-function protective coating on the surface with around 3 nm (Fig. 7g), while maintaining a consistent R-3m layered structure inside." |
-
-----------------------------------------
-
-=== 复查对象: Li 等 - 2021 - Single-Crystal-Layered Ni-Rich Oxide Modified by Phosphate Coating Boosting Interfacial Stability of.pdf ===
-该文献是关于 NASICON 型磷酸盐（LATP）包覆单晶富镍正极（S-NCM622）在硫化物全固态电池中应用的核心研究，符合复查标准。
-
-### 1. 电化学性能
-
-| 性能指标 | 数值 | 溯源类型 | 来源（原文） |
-| :--- | :--- | :--- | :--- |
-| 初始放电容量 | 152.1 mAh g⁻¹ (在 0.05 C) | 文本溯源 | The initial discharge capacity of the NCM622@LATP-based ASSLB was 152.1 mAh g⁻¹, whereas the pristine S-NCM622 was only 100.9 mAh g⁻¹. |
-| 初始放电容量 | 147.8 mAh g⁻¹ (在 0.1 C) | 文本溯源 | In sharp contrast, the ASSLB with the NCM622@LATP cathode exhibited an encouraging initial discharge capacity of 147.8 mAh g⁻¹. |
-| 循环性能 | 100圈后容量保持率为87.6% (在0.1 C下) | 视觉/文本双重溯源 | **视觉**: 根据 Figure 2e 循环性能图，NCM622@LATP 曲线（红色）在 100 圈后，其容量值从初始约 148 mAh g⁻¹ 下降到约 130 mAh g⁻¹，保持率约为 (130/148) ≈ 87.8%; **文本**: In sharp contrast, the ASSLB with the NCM622@LATP cathode exhibited an encouraging initial discharge capacity of 147.8 mAh g⁻¹ with a capacity retention of 87.6% after 100 cycles at 0.1 C. |
-| 库伦效率 | 在后续循环中几乎高于99% | 视觉/文本双重溯源 | **视觉**: 从 Figure 2e 的右侧坐标轴（Coulombic efficiency (%)）读取，NCM622@LATP 的库伦效率（红色圆点）在首圈后迅速攀升至接近 100%; **文本**: Moreover, the coulombic efficiency of NCM622@LATP was virtually greater than 99% during the following cycles. |
-| 倍率性能 | 在0.05 C, 0.1 C, 0.2 C, 0.5 C 和 1 C下，放电容量分别为155, 146, 136, 118 和 94 mAh g⁻¹ | 视觉/文本双重溯源 | **视觉**: 从 Figure 2d 倍率性能图中，根据不同倍率下的循环圈数，读取 NCM622@LATP（红色方块）对应的容量值; **文本**: The ASSLB with the NCM622@LATP cathode delivered the discharge capacities of 155, 146, 136, 118 and 94 mAh g⁻¹ at 0.05 C, 0.1 C, 0.2 C, 0.5 C and 1 C, respectively, demonstrating superior rate capacities. |
-
-### 2. 核心机制深度解析
-
-| 测试手段 | 核心机制推演（原文摘录） |
-| :--- | :--- |
-| TEM/EDS | **(包覆层物理结构)** The thickness of the conformal LATP coating is approximately 8 nm (Figure 1e).; The uniform distribution of Ti and P on the surface of NCM622@LATP implies the existence of a homogeneous LATP coating. |
-| XPS | **(界面化学稳定性)** Impressively, the S 2p signals for the NCM622@LATP changed only minimally before and after cycling, proving the effective inhibition of side reactions by the LATP modification.; The XPS results explicitly demonstrate that the oxidation reactions at the cathode/electrolyte interface are effectively inhibited during cycling by LATP modification of the pristine S-NCM622 particles. |
-| SEM | **(界面机械稳定性)** As indicated in Figure 4c, numerous microcracks and micropores occurred within the S-NCM622/Li₁₀SnP₂S₁₂ electrode after cycling, which indicates inferior physical contact between the S-NCM622 and Li₁₀SnP₂S₁₂... Conversely, the NCM622@LATP/Li₁₀SnP₂S₁₂ electrode maintains favorable contact between the particles after cycling (Figure 4d), which guarantees a continuous and sufficient Li⁺ flow at the interface. |
-| 机理分析 | **(热力学驱动力)** The enhanced interfacial electrochemical stability also benefits from the electrochemically high oxidation stability of LATP, together with the chemical inertness of LATP to the layered oxide cathode and sulfide electrolyte. This is partly because the strong orbital hybridization between P and O results in the strong P–O covalent bonding and partly because the phosphates contain the same anion (O²⁻) as in the oxides and the same cation (P⁵⁺) as in the thiophosphate electrolytes, which weakens the driving force of ion exchange at the resultant interfaces. |
-
-----------------------------------------
-
-=== 复查对象: Luo 等 - 2022 - Improvement in interfacial stability of high-rate Ni-rich oxide cathode by multifunctional LiTi0.5Zr.pdf ===
-该文献是核心研究，符合复查标准。
+=== 复查对象: Zou 等 - 2023 - Stabilized CathodeSulfide Electrolyte Interface through Conformally Interfacial Nanocoating for All.pdf ===
+该文献为核心研究，予以复查。
 
 ### 1. 【电化学性能】
 
-*   **初始放电比容量与首圈库伦效率 (ICE)**
-    *   **来源 (正文文本):** "The initial discharge specific capacity was 210.16 mAh g⁻¹ at 0.2C..."
-    *   **来源 (图 10a):** 从插图图例中目视读取，NCM-LTZP1 (1 wt% 包覆) 样品在 0.1C, 2.7-4.3V@25°C 条件下的初始库伦效率为 87%。
-
-*   **倍率性能**
-    *   **来源 (正文文本):** "...and a remarkably high discharge capacity of 147.68 mAh g⁻¹ was recorded at 10C."
-    *   **来源 (图 10b 及 表 2):** 在 2.7-4.3V@25°C 条件下，NCM-LTZP1 样品在 0.2C, 0.5C, 1C, 2C, 5C, 10C 倍率下的放电比容量分别为 204.1 mAh g⁻¹, 195.4 mAh g⁻¹, 189.0 mAh g⁻¹, 180.1 mAh g⁻¹, 164.2 mAh g⁻¹, 147.68 mAh g⁻¹。此数据通过目视读取图 10b 中 NCM-LTZP1 样品的蓝色数据点，并通过表 2 交叉验证。
-
-*   **常温循环性能 (25℃)**
-    *   **来源 (正文文本):** "The capacity retention rate reached 84.7% after 200 cycles of 1C (25 °C)."
-    *   **来源 (图 10d):** 在 1C, 2.7-4.3V@25°C 条件下，NCM-LTZP1 样品的初始放电容量标记为 189 mAh g⁻¹，经过 200 次循环后，容量保持率为 84.7%。
-
-*   **高电压循环性能 (4.5V, 25℃)**
-    *   **来源 (正文文本):** "...after 200 cycles at 4.5 V, the NCM-LTZP1cathode notably achieved a high discharge midpoint voltage and a capacity retention of 76.2% (153.5 mAh g⁻¹)..."
-    *   **来源 (图 11c):** 在 1C, 2.7-4.5V@25°C 条件下，NCM-LTZP1 样品的初始放电容量标记为 206 mAh g⁻¹，经过 200 次循环后，容量保持率为 76.2%。
-
-*   **高温循环性能 (40℃)**
-    *   **来源 (正文文本):** "NCM-LTZP1 still obtained a reversible capacity of 145.7 mAh g⁻¹ (72.7%) at 40 °C in the same voltage..."
-    *   **来源 (图 11e):** 在 1C, 2.7-4.3V@40°C 条件下，NCM-LTZP1 样品的初始放电容量标记为 200.4 mAh g⁻¹，经过 200 次循环后，容量保持率为 72.7%。
+| 性能指标 | LATP@NCM811 (改性后) | Bare NCM811 (原始) | 数据来源 |
+| :--- | :--- | :--- | :--- |
+| **涂层厚度** | 8 nm | 无 | **文本摘录:** "the transmission electron microscopy (TEM) image was further conducted to reveal the microstructure of the LATP@ NCM811 particle, which is coated with amorphous LATP layers about 8 nm thick (Figure 2e)." |
+| **首次放电比容量 (0.1C)** | 151.5 mAh/g | 121.9 mAh/g | **文本摘录:** "LATP@NCM811 and bare NCM811 cathodes show the first discharge capacity of 151.5 and 121.9 mAh/g, respectively." |
+| **循环性能 (0.1C, 100圈)** | 容量保持率 81.6%; 100圈后容量 123.5 mAh/g | 100圈后容量 35.3 mAh/g | **文本摘录(摘要):** "The initial discharge capacity of the as-prepared LATP@NCM811/Li5.5PS4.5Cl1.5/Li batteries at 0.1 C is 151.5 mAh/g, and the capacity retention rate is 81.6% after 100 cycles at room temperature."; **文本摘录(正文):** "The reversible specific capacity is maintained at 123.5 mAh/g after 100 cycles at 0.1 C, and a capacity retention of 81.6% can be achieved."; **文本摘录(正文):** "The bare NCM811/Li5.5PS4.5Cl1.5/Li battery shows the nature of the discharge capacity attenuation rapidly, providing only a capacity of 35.3 mAh/g after 100 cycles..." |
+| **倍率性能 (1C)** | 76.1 mAh/g | 38.6 mAh/g | **文本摘录:** "...the discharge capacity is only 38.6 mAh/g at 1 C, whereas the discharge capacity of the LATP@NCM811 cathode at 0.05, 0.1, 0.2, 0.5, and 1 C was 166.9, 149.6, 133.4, 95.3, and 76.1 mAh/g, respectively." |
+| **界面阻抗 (静置48h)** | 未找到 | 从 14.4 Ω 增长至 29.8 Ω | **文本摘录:** "After 48 h, the value of the interface impedance has changed from 14.4 to 29.8 Ω..." (针对Bare NCM811); **视觉读取:** Figure 4a 的 Nyquist 图谱显示，Bare NCM811 在无充放电情况下，随着时间推移，代表界面阻抗的半圆弧显著增大。 |
+| **界面阻抗 (首次循环后)** | 未找到 | 从 27.1 Ω 增长至 198.9 Ω | **文本摘录:** "The value of the interface impedance has changed from 27.1 to 198.9 Ω after the first cycle." (针对Bare NCM811); **视觉读取:** Figure 4b 的 Nyquist 图谱显示，Bare NCM811 在首次循环后，代表界面阻抗的半圆弧相比循环前急剧增大。 |
+| **界面阻抗 (循环后稳定性)** | 从第10圈到第100圈基本不变 | 未找到 | **文本摘录:** "Experimental data show that the interface impedance value is basically unchanged from the 10th to 100th cycle (Figure 4c)."; **视觉读取:** Figure 4c 的 Nyquist 图谱显示，LATP@NCM811在第10圈和第100圈后的两个半圆弧尺寸几乎完全重合。 |
 
 ### 2. 【核心机制深度解析】
 
-*   **界面稳定性与副反应抑制 (XPS & HRTEM)**
-    *   **机理:** LTZP 包覆层物理隔绝了电极与电解液，有效抑制了碳酸酯溶剂分解和富镍正极表面晶格氧的脱出，从而稳定了界面结构。
-    *   **原文支撑 (XPS):** "In comparison with NCM-0, weaker peak intensities of the corresponding characteristic peaks could be detected in the C 1 s spectra of NCM-LTZP1, indicating that the formation of Li2CO3 and other carbonates was substantially inhibited in the presence of the LTZP buffer layer... The intensity of the lattice oxygen signal in the O 1 s spectrum of NCM-LTZP1 was highly pronounced. Therefore, its interfacial structure was highly stable, and it substantially inhibited the escape of lattice oxygen (i.e., TMs dissolution)."
-    *   **原文支撑 (HRTEM):** "Unlike the R3-m phase existing in the NCM-0 surface, an orthorhombic phase with an inter-planar of 2.46 Å, corresponding to the (002) plane of LTZP, and a thickness of ~20 nm was exhibited in the surface of NCM-LTZP1 (region III)... The HAADF-STEM images confirmed the formation of lattice-matched LTZP coating on NCM811 secondary particles, revealing the epitaxial growth behavior of LTZP along the NCM811 lattice."
+*   **抑制空间电荷层 (Thermodynamic Driving Force)**
+    *   **机理:** NCM811与硫化物电解质之间巨大的Li⁺化学势差驱动Li⁺从电解质向电极迁移，在电解质侧形成Li⁺耗尽的空间电荷层，导致高界面阻抗。LATP涂层具有电子绝缘性，可以打破电荷补偿平衡，从而抑制Li⁺浓度梯度的形成和空间电荷层的扩展。
+    *   **原文佐证:** "The formation of the space charge layer is due to the large difference between the chemical potential of Li⁺ in the NCM811 electrode and the Li5.5PS4.5Cl1.5 electrolyte, which leads to the diffusion of Li⁺ from the electrolyte to the NCM811 electrode... However, the LATP solid electrolyte layer with electronic-insulate can break the balance, which can prevent the generation of Li⁺ concentration gradient and inhibit the generation of a space charge layer."
 
-*   **结构稳定性与相变抑制 (XRD & dQ/dV)**
-    *   **机理:** Ti/Zr 掺杂形成的强 Ti-O/Zr-O 化学键增强了过渡金属层的稳定性，抑制了高充电态下从 H2 到 H3 的有害相变及其伴随的晶格坍缩，从而减缓了微裂纹的产生。
-    *   **原文支撑 (dQ/dV):** "For NCM-LTZP1, the three phase transitions remained essentially unchanged, indicating that the H2/H3 phase transition is suppressed. This is due to the strong Ti-O/Zr-O bonding stabilizing the TM-O layer, while the LTZP coating moderates the solid electrolyte interface and enhances the lithium ion migration."
+*   **稳定界面化学 (Kinetic Limitation & Side Reactions)**
+    *   **测试手段:** X-ray Photoelectron Spectroscopy (XPS)
+    *   **机理:** LATP物理隔离层有效阻止了NCM811与Li₅.₅PS₄.₅Cl₁.₅之间的直接接触，从而抑制了Li₅.₅PS₄.₅Cl₁.₅在充电过程中被高电位NCM811氧化分解。XPS结果表明，无涂层的电极循环后，在P 2p谱中检测到PO₄³⁻信号，在S 2p谱中检测到亚硫酸盐(sulfites)和硫酸盐(sulfates)等副产物，而LATP涂层电极循环后未见明显的分解产物信号。
+    *   **原文佐证:** "The bare NCM811 composite cathode shows characteristic peaks of bridging sulfur (Li₂Sₙ-P₂Sₓ), sulfites, and sulfates species (Figure 6c), further explaining that the Li₅.₅PS₄.₅Cl₁.₅ has been oxidized decomposition after cycling. Conversely, the S 2p signals for LATP@NCM811 (Figure 6d) after cycling shows no sign of any decomposition products."
 
-*   **电子/离子导电性增强 (DFT)**
-    *   **机理:** LTZP 的引入（特别是 Zr 的 3d 轨道）增加了费米能级附近的电子态密度，同时 Ti/Zr 掺杂形成的强化学键降低了体系的总能量，增强了结构稳定性。功函数的降低则表明电子更容易从费米能级溢出，共同促进了电子电导率的提升。
-    *   **原文支撑 (DFT - 结合能):** "The BE of the system after partial substitution of Ti and Zr atoms for the Ni sites in NCM ternary materials was calculated to be 8.25 eV by using Equation (1), indicating that the introduction of Ti and Zr atoms made the NCM ternary materials more stable."
-    *   **原文支撑 (DFT - 态密度):** "...the introduction of 3d orbital Zr atoms into NCM811 after LTZP surface modification remarkably increased the density of electronic states near the Fermi energy level, thus increasing the electron concentration and enhancing the conductivity."
-    *   **原文支撑 (DFT - 功函数):** "...the addition of LTZP reduced the work function of the system, indicating that introducing LTZP could promote the electron spillover from the Fermi energy level of NCM811-LTZP to vacuum and enhance the conductivity of the system."
+*   **加速界面离子动力学 (Kinetic Improvement)**
+    *   **测试手段:** Galvanostatic Intermittent Titration Technique (GITT)
+    *   **机理:** LATP本身是优良的Li⁺导体 (室温离子电导率 1.8 × 10⁻⁴ S/cm)。该涂层作为一个高效的Li⁺传输通道，降低了Li⁺穿越正极/电解质界面的能垒。GITT测试显示，与原始电极相比，LATP改性电极在整个放电过程中的电压极化显著减小。
+    *   **原文佐证:** "The polarization of the modified LATP@NCM811 cathode was significantly reduced compared with that of the NCM811 in the whole range (Figure 5b). ...it indicated that the diffusion kinetics of lithium ion of NCM811 can distinctly be improved by the LATP coating layer."
 
-----------------------------------------
-
-=== 复查对象: Wang 等 - 2020 - Enhancing high-voltage performance of LiNi0.8Co0.1Mn0.1O2 by coating with NASICON fast ionic conduct.pdf ===
-该文献为核心研究，执行【文本与视觉双轨核查】。
-
-### 1. 关于【电化学性能】
-
-| 性能指标 | 基准材料 (Pristine NCM811) | 涂层改性材料 (NCM@LAZP-1) | 数据来源与复查方法 |
-| --- | --- | --- | --- |
-| 循环性能 (高压) | 200次循环后容量剩余112.1 mAh/g; 保持率为52.3% | 200次循环后容量剩余179.3 mAh/g; 保持率为84.8% | **来源:** 摘要文本; Figure 4b; Table 2。**复查:** 摘要中英文原句为 "the modified NCM@LAZP-1 cathode is discovered to realize a sustained reversible capacities of 179.3 mA h g⁻¹, corresponding to capacity retention of 84.8% after 200 charge/discharge cycles, while the pristine NCM cathode delivers only 112.1 mA h g⁻¹, matching with capacity retention rate of 52.3%"。该数据与Figure 4b循环曲线图及Table 2中的数据一致。测试条件: 1C; 2.8-4.5 V。 |
-| 循环性能 (常规电压) | 200次循环后容量剩余129.4 mAh/g; 保持率为65.7% | 300次循环后容量剩余153.1 mAh/g; 保持率为78.3% | **来源:** Figure 4a; 正文文本。**复查:** 正文(p. 4)英文原句为 "a sharply declining of capacity from 196.8 to 129.4 mA h g⁻¹ for the pristine NCM material matches with the capacity retention rate of only 65.7% (200 cycles)"。摘要中对于改性样的描述为 "The NCM@LAZP-1 cathode material maintains 78.3% after 300 cycles at 1C in voltage of 2.8-4.3 V"。该描述与Figure 4a循环曲线图趋势和终点值一致。 |
-| 初始库伦效率 (ICE) | 88.07% | 83.90% | **来源:** Figure 4e。**复查:** 从Figure 4e图例中直接读取 "NCM 88.07%" 和 "NCM@LAZP-1 83.90%"。 |
-| 倍率性能 | 10C下约148 mAh/g | 10C下约162 mAh/g | **来源:** Figure 4f。**复查:** 从Figure 4f倍率性能图中视觉读取; NCM (黑色方块)在10C时略低于150 mAh/g; NCM@LAZP-1 (绿色圆形)在10C时略高于160 mAh/g。原文无具体数值描述。 |
-| Li⁺扩散系数 (D_Li⁺) (初始) | 8.2956 × 10⁻¹² cm²/s | 1.0026 × 10⁻¹¹ cm²/s | **来源:** Table 3。**复查:** 从Table 3中直接读取NCM和NCM@LAZP-1在1st cycle时的D_Li⁺值。 |
-
-### 2. 关于【核心机制深度解析】
-
-| 测试手段 | 核心发现与推演机理 | 原文佐证 (英文摘录) |
-| --- | --- | --- |
-| XRD Rietveld 精修 & XPS | **涂层抑制了Li⁺/Ni²⁺阳离子混排:** LAZP涂层及部分元素(Zr⁴⁺, PO₄³⁻)的掺入，增加了(003)/(104)衍射峰的强度比(从1.201增至1.238)，并显著降低了材料表面的Ni²⁺含量(从40.6%降至16.9%)。这直接抑制了Li⁺/Ni²⁺混排，稳定了层状结构，从而提升了循环稳定性。 | **XRD:** "The strength ratio of (I(003)/I(104)) of each sample outnumbers 1.2, as shown in Table 1, and it’s obviously that the value for modified NCM@LAZP-1 (1.238) is much more higher than that of unmodified NCM (1.201), reflecting that the coating material LAZP can significantly retrain the level of cation mixing."; **XPS:** "It is clearly shown in Fig. 3b that the content of Ni²⁺ for NCM@LAZP-1 is 16.9%, while the content of Ni²⁺ for NCM is 40.6%, much higher than NCM@LAZP-1 one, reflecting that the LAZP film apparently decreases the Ni²⁺ content and noticeably ameliorates the electrochemical properties of NCM." |
-| CV & EIS | **涂层降低了界面极化并稳定了界面膜:** CV曲线显示，改性后电极的氧化还原峰电位差减小(从0.135 V降至0.118 V)，表明电化学极化减弱。EIS数据表明，循环后改性电极的界面膜电阻(Rf)和电荷转移电阻(Rct)的增长显著减缓，说明LAZP层有效抑制了电解液的分解，形成了更薄、更稳定的界面膜(CEI)。 | **CV:** "The potential intervals (0.118 V) of the redox peaks of NCM@LAZP-1 during the first cycle is lower than that of NCM (0.135 V)... which proves the lower polarization of NCM@LAZP-1 electrode..."; **EIS:** "Surprisingly, the slower growth of Rf for NCM@LAZP-1 from 51.38 Ω (1st) to 69.42 Ω (200th) indubitably indicates that the LAZP coating layer can totally restrain the degradation of cathode materials, and forms a steady film with low impedance..." |
-| TEM & EDS | **形成了均匀的快离子导体涂层:** 在NCM811颗粒表面成功构筑了厚度约为4 nm的均匀LAZP涂层。该涂层作为快离子导体，能够促进Li⁺在电极/电解液界面的传输，同时物理性地阻挡了电解液对正极的侵蚀。 | "As a contrast, a LAZP coating film with a thickness of round about 4 nm on the surface of the NCM@LAZP-1 particles are subject to observation under TEM (Fig. 2g–h)... The test results of SEM and TEM obviously indicate that coating with LAZP forms an evenly layer and decreases the amount of lithium residual on the surface of NCM particles." |
+*   **缓解循环过程中的晶格应力与接触失效 (Mechanical Integrity)**
+    *   **测试手段:** Scanning Electron Microscope (SEM)
+    *   **机理:** NCM材料在脱嵌锂过程中经历体积变化，这会导致固-固界面处产生应力，引发颗粒破碎、裂纹产生和物理接触丧失。LATP涂层作为一个柔性缓冲层，能够有效缓解这种应力，维持复合正极在长期循环中结构和界面的完整性。循环后的SEM图像显示，原始电极出现大量裂纹和空洞，而改性电极颗粒间接触更紧密。
+    *   **原文佐证:** "As shown in Figure S5b,c, numerous cracks and hollows occurred in the NCM811 electrode surface after 100 cycles... Conversely, the contact between the particles of the LATP@NCM811 composite electrode is more compact after 100 cycles (Figure S5e,f). ...These results indicate that LATP coating layer could effectively mitigate the volume changes of the composite cathode during the cycle process."
 
 ----------------------------------------
 
